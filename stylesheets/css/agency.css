@@ -210,7 +210,10 @@ header .intro-text {
 }
 header .intro-text .intro-lead-in {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+<<<<<<< HEAD
  
+=======
+>>>>>>> 2e2da48599a3ad52a8b58c75bb0a80d2749230b3
   font-size: 22px;
   line-height: 22px;
   margin-bottom: 25px;
@@ -230,7 +233,10 @@ header .intro-text .intro-heading {
   }
   header .intro-text .intro-lead-in {
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+<<<<<<< HEAD
    
+=======
+>>>>>>> 2e2da48599a3ad52a8b58c75bb0a80d2749230b3
     font-size: 40px;
     line-height: 40px;
     margin-bottom: 25px;
@@ -635,7 +641,7 @@ ul.social-buttons li a:active {
   border: none;
   min-height: 100%;
   padding: 100px 0;
-  text-align: center;
+  text-align: left;
 }
 .portfolio-modal .modal-content h2 {
   margin-bottom: 15px;
