@@ -73,14 +73,15 @@
         <div class="container">
             <div class="intro-text">
                 <div class="timeline-image">
-                    <img style="border-radius: 50%; height: 30%; width:30%; border: 5px solid white;" src="assets/img/profile.jpg" alt="">
+                    <img style="border-radius: 50%; height: 30%; width:20%; border: 5px solid white;" src="assets/img/profile.jpg" alt="">
                 </div>
                 <br>
-                <br>
-                <br>
-                <div class="intro-lead-in">Mame Aminata DIOP</div>
-                <div style="font-size:200%">Network and Telecommunications engineering</div>
+                <div class="intro-lead-in">
+                    <div style ="text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;"> Mame Aminata DIOP </div>
+                </div>
+                <div class="intro-lead-in" style="font-size:200%" style ="border: 5px solid white">Network and Telecommunications engineering</div>
                 <img src = "./assets/img/logo-insa.jpg" style ="border: 5px solid white;"> 
+                <img src = "./assets/img/logoIss.png" style ="border: 5px solid white; width:9.5%"> 
             </div>
         </div>
     </header>
@@ -102,7 +103,11 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="assets/img/portfolio/roundicons.png" class="img-fluid" alt="">
+                        <!--img src="assets/img/user.png" class="img-fluid; font-awesome:center" alt="" style="font-size:50%"-->
+                        <div  style="text-align:center; padding-top: 18px; padding-bottom:18px; border: 2px solid black; background-color:#C0C0C0">                      
+                                <img src="assets/img/user.png" style="width: 60%; height:60%" alt="">
+                        </div>
+                        
                     </a>
                     <div class="portfolio-caption">
                         <h4>Generality</h4>
@@ -116,7 +121,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="assets/img/portfolio/startup-framework.png" class="img-fluid" alt="">
+                        <img src="assets/img/logoIss.png" class="img-fluid" alt="" style="height:250px; width:500px; border: 2px solid blue; background-color:#C0C0C0" >
                     </a>
                     <div class="portfolio-caption">
                         <h4>Descriptive part</h4>
@@ -130,11 +135,11 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="assets/img/portfolio/treehouse.png" class="img-fluid" alt="">
+                        <img src="assets/img/technic.jpg" class="img-fluid" alt="" style="height:250px; width:500px;">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Technical part</h4>
-                        <p class="text-muted">Problems, Resolutions, Skills synthesis</p>
+                        <p class="text-muted">Problems, Solutions, Skills synthesis</p>
                     </div>
                 </div>
             </div>
@@ -147,8 +152,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">About</h2>
-                    <h3 class="section-subheading text-muted" style="color:black">This portfolio represents a synthesis of my last year at INSA, a five year engineering school located in Toulouse, France. It is realized to allow the examinations board to evaluate my Transversal Multidisciplinary Courses (PTP) Innovative Smart System (TMC ISS) that is my specialization for this this last year. Furthermore, it allows me to do a self-assesment about skills I have gained during this entire year.
-The document is composed of 4 parts</h3>
+                    <h3 class="section-subheading text-muted" style="color:black">This portfolio represents a synthesis of my last year at INSA, a five year engineering school located in Toulouse, France. It is realized to allow the examinations board to evaluate my Transversal Multidisciplinary Courses (PTP) Innovative Smart System (TMC ISS) that is my specialization for this this last year. Furthermore, it allows me to do a self-assesment about skills I have gained during this entire year.</h3>
                 </div>
             </div>
             <div class="row">
@@ -380,9 +384,11 @@ The document is composed of 4 parts</h3>
     </footer>
 
     <!-- Portfolio Modals -->
-
+    <!-- mettre tabindex="-1" role="dialog" aria-hidden="true" data-spy="scroll" data-target=".navbar" data-offset="50" dans le modal -->
+    <!-- mettre href="#name_section" -->
+    <!-- creer une section avec id="name_section" -->
     <!-- Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true" data-spy="scroll" data-target=".navbar" data-offset="50">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
@@ -402,15 +408,22 @@ The document is composed of 4 parts</h3>
                                 <br>
                                     Name, first name: Mame Ainata DIOP
                                     <br>
+                                    <br>
                                     Nationality : Sénégalaise
+                                    <br>
                                     <br>
                                     Age : 24
                                     <br>
+                                    <br>
                                     <i style="font-size:100%" class="fa fa-envelope fa-2x" aria-hidden="true"></i> mdiop@etud.insa-toulouse.fr
                                     <br>
+                                    <br>
                                     <i style="font-size:120%" class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i> <a href="https://linkedin.com/mdiop">My linkedIn</a>
+                                    <br>
                                 <br>
                                 <h3 class="text-center" style="background-color: #720520; color:white">A2-Curriculumm vitae</h3>
+                                <embed src="./pdf/CV2017.pdf" width="100%" height="1200" type='application/pdf'>
+                                <br>
                                 <br>
                                 <h3 class="text-center" style="background-color: #720520; color:white">A3-Knowledge from training</h3>
                                 <table class="table table-bordered">
@@ -433,87 +446,87 @@ The document is composed of 4 parts</h3>
                                       <tr style="background-color : #992340; color:white; ;">
                                         <td>Smart Devices</td>
                                         <td>59,5</td>
-                                        <td>link</td>
+                                        <td></td>
                                       </tr>      
                                       <tr>
                                         <td>Introduction to sensors</td>
                                         <td>7,5</td>
-                                        <td>link</td>
+                                        <td></td>
                                       </tr>
                                       <tr>
                                         <td>Optical sensors (Lifi)</td>
                                         <td>7,5</td>
-                                        <td>link</td>
+                                        <td></td>
                                       </tr>
                                       <tr>
                                         <td>Intellectual property in Open Source Hardware (Creative commons…)</td>
                                         <td>1,25</td>
-                                        <td>link</td>
+                                        <td></td>
                                       </tr>
                                       <tr>
                                         <td>Microcontrollers and Open-Source Hardware (MOSH)</td>
                                         <td>25,25</td>
-                                        <td>bo@example.com</td>
+                                        <td><a href="#mosh">link</a></td>
                                       </tr>
                                       <tr style="background-color : #992340; color:white">
-                                        <td>Communication a mettre en gras</td>
+                                        <td>Communication</td>
                                         <td>63,75</td>
-                                        <td>link</td>
+                                        <td></td>
                                       </tr>
                                       <tr>
                                         <td>Protocols for connected objects</td>
                                         <td>33,25</td>
-                                        <td>link</td>
+                                        <td><a href="#Protocoles_objets_connectés">link</td>
                                       </tr>
                                       <tr>
                                         <td>Communications numériques sans fil pour les objets connectés : Wireless digital radio communication for connected things (object)</td>
                                         <td>5</td>
-                                        <td>link</td>
+                                        <td> <a href="#WirelessSensorsNetwork">link</a></td>
                                       </tr>
                                       <tr>
                                         <td>Energy for connected things (storage, transmiting)</td>
                                         <td>7,5</td>
-                                        <td>link</td>
+                                        <td></td>
                                       </tr>
                                       <tr>
                                         <td>Sécurity in connected things network</td>
                                         <td>7,5</td>
-                                        <td>link</td>
+                                        <td><a href="#">link</a></td>
                                       </tr>
                                       <tr>
                                         <td>Emerging networks (SDN, NGN)</td>
                                         <td>10,25</td>
-                                        <td>link</td>
+                                        <td></td>
                                       </tr>
                                       <tr style="background-color : #992340; color:white">
                                         <td>Middleware and service</td>
                                         <td>62</td>
-                                        <td>link</td>
+                                        <td></td>
                                       </tr>
                                       <tr>
                                         <td>Architecture/Structure of service</td>
                                         <td>31</td>
-                                        <td>link</td>
+                                        <td></td>
                                       </tr>
                                       <tr>
                                         <td>Middleware for internet of things</td>
                                         <td>14,75</td>
-                                        <td>link</td>
+                                        <td><a href="#IoT">link</a></td>
                                       </tr>
                                       <tr>
                                         <td>Emerging networks (SDN, NGN)</td>
                                         <td>10,25</td>
-                                        <td>link</td>
+                                        <td></td>
                                       </tr>
                                       <tr>
                                         <td>adaptability : cloud and autonomic management</td>
                                         <td>16,75</td>
-                                        <td>link/td>
+                                        <td><a href="#Cloud">link</a></td>
                                       </tr>
                                       <tr style="background-color : #992340; color:white">
                                         <td>Data analysis and processing</td>
                                         <td>37,75</td>
-                                        <td>link</td>
+                                        <td></td>
                                       </tr>
                                       <tr>
                                         <td>Software engineering</td>
@@ -523,22 +536,23 @@ The document is composed of 4 parts</h3>
                                       <tr>
                                         <td>Semantic data processing</td>
                                         <td>8</td>
-                                        <td>link</td>
+                                        <td><a href="#Web_Semantic">link</a></td>
                                       </tr>
                                       <tr>
                                         <td>Data analysis and processing  : big data</td>
                                         <td>15</td>
-                                        <td>act@example.com</td>
+                                        <td><a href="#Big_Data_Analysis">link</a></td>
                                       </tr>
                                       <tr>
                                         <td>SPOC/concours/conferences</td>
                                         <td>8,25</td>
-                                        <td>link</td>
+                                        <td>
+                                        </td>
                                       </tr>
                                       <tr style="background-color : #992340; color:white">
                                         <td>Innovative realisation</td>
                                         <td>80,75</td>
-                                        <td>link</td>
+                                        <td></td>
                                       </tr>
                                        <tr>
                                         <td>Integrating project</td>
@@ -548,39 +562,145 @@ The document is composed of 4 parts</h3>
                                        <tr>
                                         <td>English</td>
                                         <td>8,25</td>
-                                        <td>link</td>
+                                        <td></td>
                                       </tr>
                                        <tr>
                                         <td>Portfolio</td>
                                         <td>8,25</td>
-                                        <td>link</td>
+                                        <td></td>
                                       </tr>
                                       <tr style="background-color : #992340; color:white">
                                         <td>Innovation and humanity</td>
                                         <td>40,5</td>
-                                        <td>link/td>
+                                        <td></td>
                                       </tr>
                                       <tr>
                                         <td>Innovation / Acceptability social / Business development</td>
                                         <td>20</td>
-                                        <td>link</td>
+                                        <td></td>
                                       </tr>
                                       <tr>
                                         <td>Creativity methods / TRIZ Methods</td>
                                         <td>20,5</td>
-                                        <td>link</td>
+                                        <td></td>
                                       </tr>
                                     </tbody>
                                 </table>
+
+                                <div id="mosh">
+                                    <button class="btn btn-primary text-center" style="width:100%" data-toggle="collapse" data-target="#mosh2">
+                                        MOSH
+                                    </button>
+                                    <div id="mosh2" class="collapse">
+                                        <br>
+                                        <embed src="./pdf/MOSH_exo_5.pdf" width="100%" height="1100" type='application/pdf'>
+                                    </div>       
+                                </div>
                                 <br>
-                                <p class="text-center"> <strong>More about ISS TMC training</strong></p>
-                                <a style="color:red; text-align:center"  href="http://gei.insa-toulouse.fr/fr/formation_initiale/specialite_informatique_et_reseaux.html">Computer Science and Electronic training INSA Toulouse</a></p>
+                                <div id="Big_Data_Analysis">
+                                    <button class="btn btn-primary text-center" style="width:100%" data-toggle="collapse" data-target="#Big_Data_Analysis_content">
+                                        Big Data Analysis
+                                    </button>
+                                    <div id="Big_Data_Analysis_content" class="collapse">
+                                        <br>
+                                        <embed src="./pdf/Big_Data_Analysis.pdf" width="100%" height="1100" type='application/pdf'>
+                                    </div>       
+                                </div>
+                                <br>
+                                <div id="WirelessSensorsNetwork">
+                                    <button class="btn btn-primary text-center" style="width:100%" data-toggle="collapse" data-target="#WirelessSensorsNetwork_Content">
+                                        WSN
+                                    </button>
+                                    <div id="WirelessSensorsNetwork_Content" class="collapse">
+                                        <br>
+                                        <embed src="./pdf/WirelessSensorsNetwork.pdf" width="100%" height="1100" type='application/pdf'>
+                                    </div>       
+                                </div>
+                                <br>
+                                <div id="Final_Paper_IoTracking">
+                                    <button class="btn btn-primary text-center" style="width:100%" data-toggle="collapse" data-target="#Final_Paper_IoTracking_Content">
+                                        IoTracking
+                                    </button>
+                                    <div id="Final_Paper_IoTracking_Content" class="collapse">
+                                        <br>
+                                        <embed src="./pdf/Final_Paper_IoTracking.pdf" width="100%" height="1100" type='application/pdf'>
+                                    </div>       
+                                </div>
+                                <br>
+                                <div id="Mobile_Addictions">
+                                    <button class="btn btn-primary text-center" style="width:100%" data-toggle="collapse" data-target="#Mobile_Addictions_Content">
+                                        Mobile Addictions
+                                    </button>
+                                    <div id="Mobile_Addictions_Content" class="collapse">
+                                        <br>
+                                        <embed src="./pdf/Mobile_Addictions.pdf" width="100%" height="1100" type='application/pdf'>
+                                    </div>       
+                                </div>
+                                <br>
+                                <div id="Poster">
+                                    <button class="btn btn-primary text-center" style="width:100%" data-toggle="collapse" data-target="#Poster_Content">
+                                        Poster
+                                    </button>
+                                    <div id="Poster_Content" class="collapse">
+                                        <br>
+                                        <embed src="./pdf/Poster.pdf" width="100%" height="700" type='application/pdf'>
+                                    </div>       
+                                </div>
+                                <br>
+                                <div id="Web_Semantic">
+                                    <button class="btn btn-primary text-center" style="width:100%" data-toggle="collapse" data-target="#Web_Semantic_Content">
+                                        Semantic Web
+                                    </button>
+                                    <div id="Web_Semantic_Content" class="collapse">
+                                        <br>
+                                        <embed src="./pdf/Web_Semantic.pdf" width="100%" height="1100" type='application/pdf'>
+                                    </div>       
+                                </div>
+                                <br>
+                                <div id="Protocoles_objets_connectés">
+                                    <button class="btn btn-primary text-center" style="width:100%" data-toggle="collapse" data-target="#Protocoles_objets_connectés_Content">
+                                        Protocols for Connected Objects
+                                    </button>
+                                    <div id="Protocoles_objets_connectés_Content" class="collapse">
+                                        <br>
+                                        <embed src="./pdf/Protocoles_objets_connectés.pdf" width="100%" height="1100" type='application/pdf'>
+                                    </div>       
+                                </div>
+                                <br>
+                                <div id="IoT">
+                                    <button class="btn btn-primary text-center" style="width:100%" data-toggle="collapse" data-target="#IoT_Content">
+                                        IoT
+                                    </button>
+                                    <div id="IoT_Content" class="collapse">
+                                        <br>
+                                        <embed src="./pdf/IoT.pdf" width="100%" height="1100" type='application/pdf'>
+                                    </div>       
+                                </div>
+                                <br>
+                                <div id="Cloud">
+                                    <button class="btn btn-primary text-center" style="width:100%" data-toggle="collapse" data-target="#Cloud_Content">
+                                        Cloud
+                                    </button>
+                                    <div id="Cloud_Content" class="collapse">
+                                        <br>
+                                        <embed src="./pdf/Cloud.pdf" width="100%" height="1100" type='application/pdf'>
+                                    </div>       
+                                </div>
+                                <br>
+                                <br>
+                                <p class="text-center"> 
+                                    <strong>More about ISS TMC training</strong>
+                                    <br>
+                                    <a style="color:red"  href="http://gei.insa-toulouse.fr/fr/formation_initiale/specialite_informatique_et_reseaux.html">Computer Science and Electronic training INSA Toulouse</a>
+                                </p>
+                                
                                 <ul class="list-inline">
                                     <li>Date: January 2017</li>
-                                    <li>Author: Round Icons</li>
+                                    <li>Author: Mame Aminata DIOP</li>
                                 </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                <center><button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button></center>
                             </div>
+                            
                         </div>
                 </div>
             </div>
@@ -622,8 +742,8 @@ The document is composed of 4 parts</h3>
                                       <tr>
                                         <td>1</td>
                                         <td>59,5</td>
-                                        <td>In the 4th year of INSA, aside from projects linked with our courses and practical works, we also had to realize a tutored project from nothing (neither courses nor practical works already done in class, only with our own ideas). I decided with other 4        students to work on a topical issue: Autonomic computing and Smart home. </td>
-                                        <td>In this project, I worked on the software part with Frameself software which allows our systems to be autonomic without human intervention. I also worked with OM2M which handle machine to machine communication.</td>
+                                        <td style="text-align:justify" >In the 4th year of INSA, aside from projects linked with our courses and practical works, we also had to realize a tutored project from nothing (neither courses nor practical works already done in class, only with our own ideas). I decided with other 4        students to work on a topical issue: Autonomic computing and Smart home. </td>
+                                        <td style="text-align:justify">In this project, I worked on the software part with Frameself software which allows our systems to be autonomic without human intervention. I also worked with OM2M which handle machine to machine communication.</td>
                                       </tr>  
                                       <tr style="background-color: #8c102f; color:white;">
                                         <th class="text-center" colspan="4" style="background-color : #992340; color:white">Innovative realisations</th>
@@ -631,10 +751,10 @@ The document is composed of 4 parts</h3>
                                       <tr>
                                         <td>2</td>
                                         <td>dd</td>
-                                        <td>Integrating project:
+                                        <td style="text-align:justify">Integrating project:
                                             The project is realized in partnership with an association that organizes ships sailing race at MontBell lake, in Ariège Toulouse.
                                             My team, 6 five INSA students and I, had to provide them a user-friendly web application that allows their spectators to do GPS tracking of boards and players to know how they performed during a regatta</td>
-                                        <td>My key role in this project was to deploy a Lora Network Server.
+                                        <td style="text-align:justify">My key role in this project was to deploy a Lora Network Server.
                                                 This server is needed to cover the entire lake with a functional network that can transmit data to our web application server.
                                         </td>
                                       </tr>
@@ -644,8 +764,8 @@ The document is composed of 4 parts</h3>
                                       <tr>
                                         <td>3</td>
                                         <td>7,5</td>
-                                        <td>MOSH (Microcontrollers and Open-Source Hardware). This course helped us to know many features about microcontrollers, Arduino and its platform but also how it is more useful to work with hardware produced by an open-source community.</td>
-                                        <td>With another INSA student, we worked in pair in order to produce an Arduino shield with required elements to realize a functional device.</td>
+                                        <td style="text-align:justify">MOSH (Microcontrollers and Open-Source Hardware). This course helped us to know many features about microcontrollers, Arduino and its platform but also how it is more useful to work with hardware produced by an open-source community.</td>
+                                        <td style="text-align:justify">With another INSA student, we worked in pair in order to produce an Arduino shield with required elements to realize a functional device.</td>
                                       </tr>
                                       <tr style="background-color: #8c102f; color:white;">
                                         <th class="text-center" colspan="4" style="background-color : #992340; color:white">Communication</th>
@@ -653,28 +773,28 @@ The document is composed of 4 parts</h3>
                                       <tr>
                                         <td>4</td>
                                         <td>1,25</td>
-                                        <td>Wireless digital radio communication for IoT:
+                                        <td style="text-align:justify">Wireless digital radio communication for IoT:
                                             The title explains what we learned in this course even we specially learn about 5G technology for IoT </td>
-                                        <td>I have presented mobile addiction: Because this phenomenon is highly linked to easy access to internet and technologies. I analyzed threats about our health and social life.</td>
+                                        <td style="text-align:justify">I have presented mobile addiction: Because this phenomenon is highly linked to easy access to internet and technologies. I analyzed threats about our health and social life.</td>
                                       </tr>
                                       <tr>
                                         <td>5</td>
                                         <td>25,25</td>
-                                        <td>bo@example.com</td>
+                                        <td>link</td>
                                         <td>link</td>
                                       </tr>
                                       <tr>
                                         <td>6</td>
                                         <td>63,75</td>
-                                        <td>Energy for IoT : I have learned with which means we can provide or store energy for connected object depending on some factors and how frequently we use an object</td>
-                                        <td>I have gained much general knowledge about batteries and energy storage and was evaluated with a multiple choice questionnaire about Energy for IoT</td>
+                                        <td style="text-align:justify">Energy for IoT : I have learned with which means we can provide or store energy for connected object depending on some factors and how frequently we use an object</td>
+                                        <td style="text-align:justify">I have gained much general knowledge about batteries and energy storage and was evaluated with a multiple choice questionnaire about Energy for IoT</td>
                                       </tr>
                                       <tr>
                                         <td>7</td>
                                         <td>33,25</td>
-                                        <td>Security in connected things network :
+                                        <td style="text-align:justify">Security in connected things network :
                                             This course follows on from the lots things we had learned in the 4th year about how a IT equipment and software can be vulnerable to hacking and attacks </td>
-                                        <td>Understand significance of security in IoT domains and protecting methods for attacks. </td>
+                                        <td style="text-align:justify">Understand significance of security in IoT domains and protecting methods for attacks. </td>
                                       </tr>
                                       <tr style="background-color: #8c102f; color:white;">
                                         <th class="text-center" colspan="4" style="background-color : #992340; color:white">Middleware and services</th>
@@ -682,20 +802,20 @@ The document is composed of 4 parts</h3>
                                       <tr>
                                         <td>8</td>
                                         <td>5</td>
-                                        <td>Architecture de service: It was about to understand through courses and practical works the SOA concept, issues and solution</td>
-                                        <td>Develop an android studio using SOA and BPEL for back-end services</td>
+                                        <td style="text-align:justify">Architecture de service: It was about to understand through courses and practical works the SOA concept, issues and solution</td>
+                                        <td style="text-align:justify">Develop an android studio using SOA and BPEL for back-end services</td>
                                       </tr>
                                       <tr>
                                         <td>9</td>
                                         <td>7,5</td>
-                                        <td>Adaptability: Cloud and autonomic computing. Thanks to the practical works on this subject, I know now how I can use the cloud (as an IAAS, PAAS…). We have learned to deploy and adapt a Paas in an autonomic way to server IoT</td>
-                                        <td>With another student we used Postman, OM2M, Frameself, and manipulate Open_Stack to learn how useful is cloud computing for IoT</td>
+                                        <td style="text-align:justify">Adaptability: Cloud and autonomic computing. Thanks to the practical works on this subject, I know now how I can use the cloud (as an IAAS, PAAS…). We have learned to deploy and adapt a Paas in an autonomic way to server IoT</td>
+                                        <td style="text-align:justify">With another student we used Postman, OM2M, Frameself, and manipulate Open_Stack to learn how useful is cloud computing for IoT</td>
                                       </tr>
                                       <tr>
                                         <td>10</td>
                                         <td>7,5</td>
-                                        <td>Professional training contract: As an Marketing product manager assistant for IoT projects at Orange, I am doing block release training during this last year. </td>
-                                        <td>The main aim of this professional training contract is to practice what I learn at INSA in a real professional context. It also allows me to increase my skills in areas such as IoT and customer relationship in telecommunications domain.</td>
+                                        <td style="text-align:justify">Professional training contract: As an Marketing product manager assistant for IoT projects at Orange, I am doing block release training during this last year. </td>
+                                        <td style="text-align:justify">The main aim of this professional training contract is to practice what I learn at INSA in a real professional context. It also allows me to increase my skills in areas such as IoT and customer relationship in telecommunications domain.</td>
                                       </tr>
                                     </tbody>
                                 </table>
@@ -711,11 +831,125 @@ The document is composed of 4 parts</h3>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                          <td>During this last year, all ISS TMC student had to realize an innovative project in a teamwork. I choose working on Boat regatta’s project that I found attractive and rich of variety of aspects I would like to learn more about. This project has been proposed by a sailing club named CVRL and located in Ariège, France. They would like the public to be more involved during the regattas they organize by providing them a user-friendly web application to follow the evolution of the races in real-time. Therefore, my team work and I had to develop this web application to show the route of the regatta and the position of each boat on a map of the lake. We named this project IoTracking (IoT + GPS tracking).<br><img src="assets/img/iotracking.PNG" alt=""><br>My team was composed of 6 students coming from different options of INSA’s training program. This, was necessary in order to combine a variety of skills required for the project’s achievement.</td>
+                                          <td style="text-align:justify">During this last year, all ISS TMC student had to realize an innovative project in a teamwork. I choose working on Boat regatta’s project that I found attractive and rich of variety of aspects I would like to learn more about. This project has been proposed by a sailing club named CVRL and located in Ariège, France. They would like the public to be more involved during the regattas they organize by providing them a user-friendly web application to follow the evolution of the races in real-time. Therefore, my team work and I had to develop this web application to show the route of the regatta and the position of each boat on a map of the lake. We named this project IoTracking (IoT + GPS tracking).<br><img src="assets/img/iotracking.PNG" alt=""><br>My team was composed of 6 students coming from different options of INSA’s training program. This, was necessary in order to combine a variety of skills required for the project’s achievement.</td>
+                                        </tr>                      
+                                        <tr><strong>
+                                            <th class="text-center" style="font-size:150%"> My function</th></strong>
+                                        </tr>
+                                        <tr>
+                                          <td style="text-align:justify">At first, the project global structure is divided in three part: Devices, Network and web application:
+                                            The device part group had to choose the electronics components, their assembly, their code and, how they communicate with the LoRa network and the specific tests. The network was under my own responsibility. I was supposed to choose and deploy an open source LoRa network server to allow our devices to communicate with our web application server. Then application part group implemented the web server and the user-friendly application with their database.<br><img src="assets/img/architecture.PNG" alt=""><br>
+                                            
+                                            
+                                            To make the appropriate choice regarding the network server, we had to take account of many constraints such as the network range, power consumption, infrastructure deployment, scalability, etc. After studying many solutions, we decided to choose LoRa that is the most appropriate solution. 
+                                            Therefore, I had to learn everything about this technology that is new to me. In addition, I had to understand how this open network server works, how I can include the component and understand the source code to deliver the best result possible with quality. This is an overview of lora network server:
+                                            <br><center><img src="assets/img/lora.PNG" alt="" style="text-align:center"></center><br>
+                                            <ul>
+                                                <li> lora-gateway-bridge allows our devices to communicate with the main lora-server.</li>
+                                                <li>A main Lora-server is responsible for handling uplink data received by the gateways.</li>
+                                                <li> A lora-app-server that provides a restful API to enable communication between lore-server and our web application.</li>
+                                            </ul>
+                                            <br>
+                                            Working on this part was a real opportunity to learn many things about IoT communication protocols, constraints we can faced to deploy a functional network.
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                <br>
+                                <h4 class="text-center" style="background-color: #8c102f; color:white">B1.2-Arduiono shieldy</h3>
+                                <table class="table table-bordered">
+                                    <thead>
+                                      <tr><strong>
+                                        <th class="text-center" style="font-size:150%"> Context</th></strong>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                          <td style="text-align:justify">As an engineering student in smart systems area, we are supposed to manipulate smart devices such as Arduino, raspberry pi etc. In MOSH class, we have learned about hardware like microcontrollers, electronical components, and shields that makes easy to realize application in Machine to Machine domain. We have also used Eagle software to design electronical circuits. To further knowledge in this domain, our teachers proposed an Arduino conception we had to do in pair students. This project aim is to practice concretely by designing and producing an Arduino UNO shield.<br><center><img src="assets/img/shematic.png" alt=""></center><br></td>
+                                        </tr>                      
+                                        <tr><strong>
+                                            <th class="text-center" style="font-size:150%"> My function</th></strong>
+                                        </tr>
+                                        <tr>
+                                          <td style="text-align:justify">
+                                              The project was divided in 2 parts: Realize the PCB then perform the routing between components. But to gain more skills, my working pair and I worked together in the 2 parts. So with Eagle, we have created the required library composed of electronical components as resistances, capacities, microcontroller, and so on… We designed the schematic and had to place the components in order to facilitate the routing between them. The result is shown in the following picture:
+                                            <br>
+                                            <br><center><img src="assets/img/shield.png" alt=""></center>
+                                            It was very useful to know further about how is produced hardware we daily use in innovative projects.
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <br>
+                                <h4 class="text-center" style="background-color: #8c102f; color:white">B1.3-Tutored project: 4th year</h3>
+                                <table class="table table-bordered">
+                                    <thead>
+                                      <tr><strong>
+                                        <th class="text-center" style="font-size:150%"> Context</th></strong>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                          <td style="text-align:justify">The project aim was to develop a SMART SYSTEM in order to optimize a HOME. The optimization can be done by monitoring some parameters as energy, security, comfort…etc. We had to manage interaction between the system and real world events. To achieve our goal, we defined some use cases and deducted the materials we would need: a Galileo electronic card, sensors and actuators. Then thanks to these material, we had to implement and develop connected things. In addition, to enable communication between these objects, we used OM2M a ready-to-be-used-software implemented in LAAS Toulouse by our tutor’s team. Regarding our system automatization and smartness, FRAMESELF was the appropriate choice to achieve our goal.<br></td>
+                                        </tr>                      
+                                        <tr><strong>
+                                            <th class="text-center" style="font-size:150%"> My function</th></strong>
+                                        </tr>
+                                        <tr>
+                                          <td style="text-align:justify">
+                                            We had to realize main use cases: create and manage smart and connected lamp and clock.
+                                            My key role was to implement rules that have to be injected in FRAMESELF software to make the system autonomic to realize the use cases. FRAMESELF extends IBM architecture about MAPE-k (Monitor, Analyzer, Planner, Executer and K as knowledge base shared with each other component of the MAPE).
+                                            <br><center> <img src="assets/img/frameself.png" alt=""></center><br>
+                                            I configured this modules by making rules to:
+                                                <ul>
+                                                    <li>Power on a lamp when there is a human but luminosity is low</li>
+                                                    <li>Increase a clock ring more and more when it is time to wake up, the idea is to wake the user progressively and not suddenly.</li>
+                                                </ul>
+                                                <br>
+                                            I also worked on OM2M to understand how it works and how to make it communicate to FRAMESEL, how it IN server and MN gateways helped us to represent our resources in OM2M platform.
+                                            The project was very interesting. I learned more than FRAMESELF and was very proud of what our team and I presented to our teachers and colleagues.
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                 <br>
+                                <h4 class="text-center" style="background-color: #8c102f; color:white">B1.4-Professionnal training</h3>
+                                <table class="table table-bordered">
+                                    <thead>
+                                      <tr><strong>
+                                        <th class="text-center" style="font-size:150%"> Context and function</th></strong>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <div class="text-center">
+                                          <img src="assets/img/logo-insa.jpg" alt=""><img src="assets/img/orange.jpg" style="heigh:100px; width:140px" alt=""><br>
+                                            </div>
+                                          <td style="text-align:justify">I am a student combining works at school and training at Orange. I exercise there as the assistant of an IoT projects product manager.
+                                            For now, I have realized two missions:<br> Orange provides LoRa network to allow startups to prototype solutions for IoT. My project manager and I had to commercialize a LoRa device that startup can use to test Orange LoRa network. The first product is a device including temperature and luminosity sensors. I had to prepare a demo to give an example of use case of the LoRa device. Therefore I implement the Arduino code for the device in order to send temperature and luminosity values to Orange LoRa servers. Then, I implement the web application that can be used to retrieve data from this device and show them to the web interface. <br></td>
+                                        </tr>                      
+                                        <tr><strong>
+                                            <th class="text-center" style="font-size:150%"> Feedback</th></strong>
+                                        </tr>
+                                        <tr>
+                                          <td style="text-align:justify">
+                                              I am very happy to finish INSA with a professional training at Orange. As an engineer in networking and telecommunications, it’s a real opportunity to work with such a big company in this sector. With all challenges resulting in IoT boom, in addition with the advent of LTM-E technology that will be better than LoRa and Sigfox according to the prediction, I will learn many more things thanks to this professional training between Orange and INSA
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <p class="text-center"> 
+                                    <strong>More about ISS TMC training</strong>
+                                    <br>
+                                    <a style="color:red"  href="http://gei.insa-toulouse.fr/fr/formation_initiale/specialite_informatique_et_reseaux.html">Computer Science and Electronic training INSA Toulouse</a>
+                                </p>
+                                
+                                <ul class="list-inline">
+                                    <li>Date: January 2017</li>
+                                    <li>Author: Mame Aminata DIOP</li>
+                                </ul>
+                            <center><button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button></center>
                         </div>
                     </div>
                 </div>
@@ -736,13 +970,104 @@ The document is composed of 4 parts</h3>
                     <div class="row">
                         <div class="col-lg-8 offset-lg-2">
                             <div class="modal-body">
+                                <h2 class="text-center">B-Technical part</h2>
+                                    <p class=" text-center item-intro text-muted">Experiences and details</p>
+                                    <p>This part aim is describe an non exaustive list of problems i have faced during this year. I will also talk about how i proceed to overcome the probmem and what i have gained as personnal skills by strying to solve them.</p>
                                 <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/treehouse-preview.png" alt="">
-                                <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
-                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                <table class="table table-bordered">
+                                    <thead>
+                                      <tr><strong>
+                                        <th class="text-center" style="font-size:150%"> Problems, Solution, Assessment</th></strong>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                          <th class="text-center" colspan="4" style="background-color: #992340; color:white">Problem 1 : Integrating project</th>
+                                        </tr> 
+                                        <tr>
+                                          <td style="text-align:justify">As I said in the part above, in this project I was responsible to deploy an open source network server to enable communication between a Lora device and a web application. After doing the choice of using Lora server, the first difficulty was to understand the entire structure of this server and how do communicate its components. Then I had to install each component and test them. That also means I had to take in hand a code written by someone else in a programming language I didn’t learn before in order to understand the minimum required to make the server work. Finally I had also to understand how the server talk to a device in one side and transmit data of this device to a web application in another side. <br></td>
+                                        </tr>                      
+                                        <tr><strong>
+                                            <th class="text-center" colspan="4">Solution</th></strong>
+                                        </tr>
+                                        <tr>
+                                          <td style="text-align:justify">
+                                            To solve this problems I have read all the Lora server documentation given by Brocaar, the GitHub user who developed this open source server. I had to be aware of some configuration constraints. I also used to talk to Brocaar about errors I faced by installing the entire server in my computer. Then Iearned about MQTT protocol that allows my server to communicate with Lora device and the web application. I installed mosquitto clients, an MQTT server to test communication before the real tests with device and web application teams.
+                                            <br><center> <img src="assets/img/MQTT.png" alt=""></center><br>
+                                            </td>
+                                        </tr>
+                                        <tr><strong>
+                                            <th class="text-center" colspan="4">Analysis and skill assessment</th></strong>
+                                        </tr>
+                                        <tr>
+                                          <td style="text-align:justify">
+                                            I feel have learned many thanks to this problem. From now, I know that Lora communication protocol uses a bridge that converts UDP (used of Lora gateways) to MQTT protocol used by Lora server. I also know that it is the best choice regarding constraints we had to realize the project. In addition, handling this problem allowed me to improve my ability to filter information we can find by doing searches,  and interact with a community of open source.                                            
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                          <th class="text-center" colspan="4" style="background-color: #992340; color:white">Problem 2: Android App for IoTracking project </th>
+                                        </tr> 
+                                        <tr>
+                                          <td style="text-align:justify">In the context of the “projet integrateur” I was supposed to develop an android app that collects GPS coordinates and sends them to a server. Developing an android application made me face some problems: understand Android Studio software structure, implement Layouts in xml and java class Activity related to those layouts. I did not practice android programming before so everything but java was new to me. I also had to use a RESTful API to implement some http request to a server. <br>
+                                          <br><center> <img src="assets/img/android.jpg" alt="" style="heigh:100px; width:140px"></center></td>
+                                        </tr>                      
+                                        <tr><strong>
+                                            <th class="text-center" colspan="4" >Solution</th></strong>
+                                        </tr>
+                                        <tr>
+                                          <td style="text-align:justify">
+                                             I start by following tutorials about developing an android application and using android IDE. I spent a lot of times about implementing and debugging an application able to do RESTful requests. 
+                                            </td>
+                                        </tr>
+                                        <tr><strong>
+                                            <th class="text-center" colspan="4">Analysis and skill assessment</th></strong>
+                                        </tr>
+                                        <tr>
+                                          <td style="text-align:justify">
+                                            Nevertheless I was motivated to learn about mobile application and do transversal thing in the same project (Lora network server and android app). 
+                                            <br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                          <th class="text-center" colspan="4" style="background-color: #992340; color:white">Problem 3: MOSH: Arduino shield </th>
+                                        </tr> 
+                                        <tr>
+                                          <td style="text-align:justify">As introduced in my experiences, I have realized an arduino shield. It is about realizing two parts: PCB conception and routing between components. The difficulty in this practice is to use datasheet and respect components’ measures, place component appropriately in the shield field. Eagle software enable to create libraries that contains electronic components, so I had to learn how to use eagle and some mistake in the PCB part that can compromise the routing part. This routing part deservs enough attention and delicacy because a route my not cross another route. . <br>
+                                          <br><center> <img src="assets/img/eagle.jpg" alt="" style="heigh:415px; width:370px"><img src="assets/img/shield.png" alt="" style="heigh:450px; width:400px"></center></td>
+                                        </tr>                      
+                                        <tr><strong>
+                                            <th class="text-center" colspan="4">Solution</th></strong>
+                                        </tr>
+                                        <tr>
+                                          <td style="text-align:justify">
+                                             To achieve our goal, my co-worker and I have spent more time understanding how to create components with eagle and place them carefully to make easy the routing part. We use both the top and the bottom of the shield to realize a functional routing without using mane VIA. Eagle does not the entire routing so we had also to complete this part manually. 
+                                            </td>
+                                        </tr>
+                                        <tr><strong>
+                                            <th class="text-center" colspan="4" >Analysis and skill assessment</th></strong>
+                                        </tr>
+                                        <tr>
+                                          <td style="text-align:justify">
+                                            Before this project, I was not able to tell how a hardware is produced for a specific need. I have learned about choosing and using the right datasheet, creating libraries, and connecting electronic components on an Arduino. But it was a pity that we did not have a return about our work. 
+                                            <br>
+                                            </td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                               
+                                <p class="text-center"> 
+                                    <strong>More about ISS TMC training</strong>
+                                    <br>
+                                    <a style="color:red"  href="http://gei.insa-toulouse.fr/fr/formation_initiale/specialite_informatique_et_reseaux.html">Computer Science and Electronic training INSA Toulouse</a>
+                                </p>
+                                
+                                <ul class="list-inline">
+                                    <li>Date: January 2017</li>
+                                    <li>Author: Mame Aminata DIOP</li>
+                                </ul>
+                                <center><button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button></center>
                             </div>
                         </div>
                    </div>
